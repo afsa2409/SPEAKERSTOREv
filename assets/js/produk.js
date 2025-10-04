@@ -4,7 +4,7 @@ const semuaProduk = {
         kategori: "JBL",
         linkKategori: "JBL.html",
         harga: "Rp 1.699.000",
-        gambar: "assets/images/PRODJBL.JPG",
+        gambar: "assets/images/PRODJBL.jpg",
         deskripsiSingkat: "Speaker portabel dengan suara bertenaga, baterai 12 jam, tahan air & debu (IP67).",
         deskripsiLengkap: "JBL Flip 6 menghadirkan suara bertenaga dengan desain portabel yang ramping. Cocok untuk dibawa ke pantai, hiking, atau pesta rumah. Dengan daya tahan baterai hingga 12 jam, pesta Anda tidak akan pernah berhenti.",
         spesifikasi: {
