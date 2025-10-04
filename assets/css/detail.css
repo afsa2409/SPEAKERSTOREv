@@ -1,0 +1,257 @@
+.breadcrumbs { padding: 20px 0; font-size: 0.9rem; color: #666; }
+.breadcrumbs a { color: var(--primary-color); text-decoration: none; }
+.breadcrumbs a:hover { text-decoration: underline; }
+.breadcrumbs i { margin: 0 10px; }
+.product-detail-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: flex-start;
+    background: var(--white-color);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    margin-bottom: 50px;
+}
+.product-gallery .main-image-container {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+.product-gallery .main-image-container img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+.product-gallery .main-image-container:hover img {
+    transform: scale(1.1);
+}
+.product-tags {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.tag-category {
+    background: var(--light-gray-color);
+    color: var(--primary-color);
+    padding: 5px 12px;
+    border-radius: 50px;
+}
+.tag-stock {
+    background: #e0f8e9;
+    color: #1e8746;
+    padding: 5px 12px;
+    border-radius: 50px;
+}
+.product-purchase-info .product-name {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.product-purchase-info .product-short-desc {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+.product-purchase-info .product-price-detail {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+.whatsapp-btn-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #25D366;
+    color: var(--white-color);
+    text-align: center;
+    padding: 18px 20px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    border: none;
+}
+.whatsapp-btn-main:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(18, 140, 126, 0.4);
+}
+.whatsapp-btn-main i {
+    font-size: 1.5rem;
+    margin-right: 12px;
+}
+.secure-payment-info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.secure-payment-info i {
+    color: #1e8746;
+    margin-right: 8px;
+}
+.product-advanced-info {
+    margin-top: 50px;
+    border: 1px solid #e5e5e5;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+.tabs {
+    display: flex;
+    background: var(--light-gray-color);
+}
+.tab-link {
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 18px 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #888;
+    transition: all 0.3s ease;
+}
+.tab-link.active, .tab-link:hover {
+    color: var(--primary-color);
+    background: var(--white-color);
+    border-bottom-color: var(--primary-color);
+}
+.tab-content {
+    display: none;
+    padding: 30px;
+    line-height: 1.8;
+    background: var(--white-color);
+}
+.tab-content.active { display: block; animation: fadeIn 0.5s ease; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.spec-table { width: 100%; border-collapse: collapse; }
+.spec-table th, .spec-table td { padding: 15px; text-align: left; border-bottom: 1px solid #f0f0f0; }
+.spec-table tr:nth-child(odd) { background-color: var(--light-gray-color); }
+.spec-table th { width: 30%; font-weight: 600; }
+.review { border-bottom: 1px solid #f0f0f0; padding: 15px 0; }
+.review:last-child { border-bottom: none; }
+.review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.review-header .stars { color: #FFC107; }
+.review-body { color: #666; }
+.related-products {
+    padding-top: 50px;
+    border-top: 1px solid #eee;
+    margin-top: 50px;
+}
+@media (max-width: 992px) {
+    .product-detail-section { grid-template-columns: 1fr; gap: 30px; }
+}
+@media (max-width: 768px) {
+    .product-purchase-info .product-name { font-size: 2.2rem; }
+    .product-purchase-info .product-price-detail { font-size: 2rem; }
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.modal-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+.modal-content {
+    background: var(--white-color);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    transform: translateY(-50px);
+    transition: transform 0.4s ease;
+}
+.modal-overlay.show .modal-content {
+    transform: translateY(0);
+}
+.modal-content h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.modal-content p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+.close-modal-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #888;
+    cursor: pointer;
+    line-height: 1;
+}
+#orderForm .form-group {
+    margin-bottom: 20px;
+}
+#orderForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+#orderForm input,
+#orderForm textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+#orderForm input:focus,
+#orderForm textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.2);
+}
+#orderForm textarea {
+    resize: vertical;
+}
+.btn-submit-order {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #25D366;
+    color: var(--white-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-submit-order:hover {
+    background: #128C7E;
+}

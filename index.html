@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STORE SPEAKER - Home</title>
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="header-logo">
+                SPEAKER <span>STORE</span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="#">Produk <i class="fas fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="JBL.html">JBL</a></li>
+                            <li><a href="sony.html">SONY</a></li>
+                            <li><a href="polytron.html">POLYTRON</a></li>
+                            <li><a href="wilson audio.html">WILSON AUDIO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="mitra.html">Mitra</a></li>
+                    <li><a href="kredit.html">Kredit</a></li>
+                    <li><a href="service.html">Service Center</a></li>
+                    <li><a href="kontak.html">Kontak Kami</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <form class="search-box" id="search-form">
+                    <input type="search" id="search-input" placeholder="Cari produk..." required>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="slider-section">
+            <div class="container"> <div class="slider">
+                    <div class="list">
+                        <div class="item"><img src="assets/images/banner12.jpg" alt="Banner 1"></div>
+                        <div class="item"><img src="assets/images/banner13.jpg" alt="JBL"></div>
+                        <div class="item"><img src="assets/images/banner14.jpg" alt="Polytron"></div>
+                        <div class="item"><img src="assets/images/banner15.jpg" alt="Wilson Audio"></div>
+                        <div class="item"><img src="assets/images/banner166.jpg" alt="Sony SRS-XB13"></div>
+                    </div>
+                    <div class="buttons">
+                        <button id="prev"><</button>
+                        <button id="next">></button>
+                    </div>
+                    <ul class="dots">
+                        <li class="active"></li><li></li><li></li><li></li><li></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="filterable-gallery">
+            <div class="container">
+                <h2 class="section-title">Galeri Produk Kami</h2>
+                <div class="filter-controls">
+                    <button type="button" class="filter-btn active" data-filter="all">Semua</button>
+                    <button type="button" class="filter-btn" data-filter="JBL">JBL</button>
+                    <button type="button" class="filter-btn" data-filter="Sony">Sony</button>
+                    <button type="button" class="filter-btn" data-filter="Polytron">Polytron</button>
+                    <button type="button" class="filter-btn" data-filter="Wilson Audio">Wilson Audio</button>
+                </div>
+                <div class="product-grid-container" id="product-gallery-container">
+                    </div>
+            </div>
+        </section>
+        </main>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                 <div class="footer-column">
+                    <h4>SPEAKER <span>STORE</span></h4>
+                    <p>Pusat speaker audio berkualitas dengan garansi resmi dan layanan purna jual terbaik.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Navigasi Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profil.html">Profil</a></li>
+                        <li><a href="kredit.html">Kredit</a></li>
+                        <li><a href="service.html">Service Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2025 by STORE SPEAKER | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/produk.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const galleryContainer = document.getElementById('product-gallery-container');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        let allProductsHTML = '';
+        for (const productId in semuaProduk) {
+            const produk = semuaProduk[productId];
+            allProductsHTML += `
+                <div class="product-card" data-category="${produk.kategori}">
+                    <div class="product-image"><img src="${produk.gambar}" alt="${produk.nama}"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">${produk.nama}</h3>
+                        <p class="product-price">${produk.harga}</p>
+                        <a href="detail.html?id=${productId}" class="btn-detail">Lihat Detail</a>
+                    </div>
+                </div>
+            `;
+        }
+        galleryContainer.innerHTML = allProductsHTML;
+        const productCards = document.querySelectorAll('.product-card');
+        function filterProducts(filter) {
+            productCards.forEach(card => {
+                const cardCategory = card.dataset.category;
+                if (filter === 'all' || cardCategory === filter) {
+                    card.classList.remove('hide');
+                } else {
+                    card.classList.add('hide');
+                }
+            });
+        }
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelector('.filter-btn.active').classList.remove('active');
+                this.classList.add('active');
+                const filterValue = this.getAttribute('data-filter');
+                filterProducts(filterValue);
+            });
+        });
+    });
+    </script>
+</body>
+</html>

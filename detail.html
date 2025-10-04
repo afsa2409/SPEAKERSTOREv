@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk</title>
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/detail.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="header-logo">SPEAKER <span>STORE</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="#">Produk <i class="fas fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="JBL.html">JBL</a></li>
+                            <li><a href="sony.html">SONY</a></li>
+                            <li><a href="polytron.html">POLYTRON</a></li>
+                            <li><a href="wilson audio.html">WILSON AUDIO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="mitra.html">Mitra</a></li>
+                    <li><a href="kredit.html">Kredit</a></li>
+                    <li><a href="service.html">Service Center</a></li>
+                    <li><a href="kontak.html">Kontak Kami</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <form class="search-box" id="search-form">
+                    <input type="search" id="search-input" placeholder="Cari produk..." required>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="breadcrumbs" id="breadcrumbs"></div>
+            <section class="product-detail-section">
+                <div class="product-gallery">
+                    <div class="main-image-container">
+                        <img src="" alt="" id="mainProductImage">
+                    </div>
+                </div>
+                <div class="product-purchase-info">
+                    <div class="product-tags">
+                        <span class="tag-category" id="productTagCategory"></span>
+                        <span class="tag-stock">Stok Tersedia</span>
+                    </div>
+                    <h1 class="product-name" id="productName"></h1>
+                    <p class="product-short-desc" id="productShortDesc"></p>
+                    <div class="product-price-detail" id="productPrice"></div>
+                    <button class="whatsapp-btn-main" id="orderBtn">
+                        <i class="fab fa-whatsapp"></i> <span>Pesan Sekarang</span>
+                    </button>
+                    <div class="secure-payment-info">
+                        <i class="fas fa-shield-alt"></i> Transaksi Aman & Terpercaya
+                    </div>
+                </div>
+            </section>
+            <section class="product-advanced-info">
+                <div class="tabs">
+                    <button class="tab-link active" data-tab="deskripsi">Deskripsi</button>
+                    <button class="tab-link" data-tab="spesifikasi">Spesifikasi</button>
+                    <button class="tab-link" data-tab="ulasan">Ulasan (5)</button>
+                </div>
+                <div id="deskripsi" class="tab-content active">
+                    <p id="productLongDesc"></p>
+                </div>
+                <div id="spesifikasi" class="tab-content">
+                    <table class="spec-table" id="specTable"></table>
+                </div>
+                <div id="ulasan" class="tab-content">
+                    </div>
+            </section>
+            <section class="related-products">
+                <h2 class="section-title">Produk Serupa</h2>
+                <div class="grid-container" id="relatedProductsContainer">
+                    </div>
+            </section>
+        </div>
+    </main>
+    <div id="orderModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal-btn">&times;</button>
+            <h3>Formulir Pemesanan</h3>
+            <p>Lengkapi data di bawah ini untuk melanjutkan ke WhatsApp.</p>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="customerName">Nama Lengkap</label>
+                    <input type="text" id="customerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="customerAddress">Alamat Lengkap</label>
+                    <textarea id="customerAddress" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Jumlah</label>
+                    <input type="number" id="quantity" value="1" min="1" required>
+                </div>
+                <button type="submit" class="btn-submit-order">Kirim Pesanan via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+    <footer class="main-footer">
+        </footer>
+    <script src="assets/js/produk.js"></script>
+    <script src="assets/js/detail.js"></script>
+</body>
+</html>
