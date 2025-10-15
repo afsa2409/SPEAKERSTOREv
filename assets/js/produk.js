@@ -78,22 +78,6 @@ const semuaProduk = {
             "Berat": "1.97 kg"
         }
     },
-    "jbl-boombox-3": {
-        nama: "JBL Boombox 3",
-        kategori: "JBL",
-        linkKategori: "JBL.html",
-        harga: "Rp 7.800.000",
-        gambar: "assets/images/JBLBOOMBOX3.jpg",
-        deskripsiSingkat: "Bass terdalam dan suara masif dengan daya tahan baterai 24 jam non-stop.",
-        deskripsiLengkap: "Dengan subwoofer baru yang lebih bertenaga, dua driver midrange, dan tweeter ganda, JBL Boombox 3 menghadirkan suara yang lebih dalam dan bertenaga. Nikmati musik selama 24 jam penuh, dari pagi hingga malam. Tahan air dan debu (IP67) serta desain gagang logam yang kokoh siap menemani petualangan apa pun.",
-        spesifikasi: {
-            "Power Output": "1x80W RMS-subwoofer + 2x40W RMS-midrange + 2x10W RMS-tweeter (AC mode)",
-            "Daya Tahan Baterai": "Hingga 24 jam",
-            "Fitur": "JBL PartyBoost, Powerbank",
-            "Sertifikasi": "Tahan air & debu IP67",
-            "Berat": "6.7 kg"
-        }
-    },
     "sony-srs-xb13": {
         nama: "Sony SRS-XB13",
         kategori: "Sony",
@@ -142,22 +126,6 @@ const semuaProduk = {
             "Berat": "26.6 kg"
         }
     },
-    "sony-srs-xp500": {
-        nama: "Sony SRS-XP500",
-        kategori: "Sony",
-        linkKategori: "sony.html",
-        harga: "Rp 5.800.000",
-        gambar: "assets/images/SONYXP500.jpg",
-        deskripsiSingkat: "Speaker pesta portabel dengan suara bertenaga, lampu ambient, dan input karaoke.",
-        deskripsiLengkap: "Hadirkan suara pesta yang dahsyat ke mana saja dengan SRS-XP500. Speaker ini menggabungkan X-Balanced Speaker Unit dengan tweeter depan efisiensi tinggi untuk suara yang kaya dan jernih. Dengan daya tahan baterai 20 jam, IPX4 tahan percikan, dan pegangan yang nyaman, pesta bisa dimulai di mana saja.",
-        spesifikasi: {
-            "Fitur": "X-Balanced Speaker Unit, Ambient Lighting",
-            "Daya Tahan Baterai": "Hingga 20 jam",
-            "Input": "2x Mikrofon/Gitar",
-            "Ketahanan": "Tahan percikan (IPX4)",
-            "Fitur Tambahan": "Karaoke Function"
-        }
-    },
     "polytron-pas-8e12": {
         nama: "Polytron PAS 8E12",
         kategori: "Polytron",
@@ -203,22 +171,6 @@ const semuaProduk = {
             "Fitur": "Super Bass, 5-Band User Equalizer, Ambient Light",
             "Konektivitas": "Bluetooth, USB, Optical Input, 2 Mic Input",
             "Power Output": "2 x 100 Watt RMS"
-        }
-    },
-    "polytron-pas-pro12f3": {
-        nama: "Polytron PAS PRO12F3",
-        kategori: "Polytron",
-        linkKategori: "polytron.html",
-        harga: "Rp 3.500.000",
-        gambar: "assets/images/POLYTRONPRO12F3.jpg",
-        deskripsiSingkat: "Professional series speaker aktif portable dengan woofer 12 inci dan 2 mic wireless.",
-        deskripsiLengkap: "PAS PRO12F3 adalah speaker profesional portabel yang tangguh dan serbaguna. Dilengkapi dengan roda dan pegangan, mudah dibawa ke mana saja. Ideal untuk acara outdoor, seminar, atau karaoke. Dilengkapi dengan baterai internal yang dapat diisi ulang untuk penggunaan tanpa listrik.",
-        spesifikasi: {
-            "Tipe Speaker": "Portable Active Speaker",
-            "Woofer": "12 inch Woofer",
-            "Fitur": "2 Mic Wireless, FM Radio, Echo Control",
-            "Konektivitas": "Bluetooth, USB, SD/MMC, Aux, Line Input",
-            "Baterai": "Built-in Battery (up to 7 hours)"
         }
     },
     "wilson-audio-sabrinax": {
