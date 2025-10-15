@@ -78,6 +78,22 @@ const semuaProduk = {
             "Berat": "1.97 kg"
         }
     },
+    "jbl-partybox-otg": {
+        nama: "JBL PartyBox On-The-Go",
+        kategori: "JBL",
+        linkKategori: "JBL.html",
+        harga: "Rp 5.250.000",
+        gambar: "assets/images/JBLPBOTG.jpg",
+        deskripsiSingkat: "Suara JBL Pro 100W, pertunjukan lampu yang disinkronkan, dan mikrofon nirkabel JBL.",
+        deskripsiLengkap: "Temukan irama Anda dengan 100 watt Suara JBL Pro yang kuat dan menggelegar. Di dalam atau di luar ruangan, JBL PartyBox On-The-Go menghadirkan nada tinggi yang jernih, nada sedang yang murni, dan bass yang berat—dengan Bass Boost untuk menjaga masa-masa indah sepanjang malam.",
+        spesifikasi: {
+            "Power Output": "100W RMS",
+            "Daya Tahan Baterai": "Hingga 6 jam",
+            "Fitur": "Termasuk 1 Mic Wireless, Tahan Percikan (IPX4), Tali Bahu",
+            "Input": "Bluetooth, USB, AUX, Mic/Guitar",
+            "Berat": "7.5 kg"
+        }
+    },
     "sony-srs-xb13": {
         nama: "Sony SRS-XB13",
         kategori: "Sony",
@@ -124,6 +140,22 @@ const semuaProduk = {
             "Input": "Mikrofon & Gitar, Input Optik",
             "Fitur Tambahan": "Roda dan gagang untuk portabilitas",
             "Berat": "26.6 kg"
+        }
+    },
+    "sony-srs-xe200": {
+        nama: "Sony SRS-XE200",
+        kategori: "Sony",
+        linkKategori: "sony.html",
+        harga: "Rp 2.199.000",
+        gambar: "assets/images/SONYXE200.jpg",
+        deskripsiSingkat: "Suara lebih luas untuk pesta yang lebih baik, portabel dan mudah dibawa.",
+        deskripsiLengkap: "XE200 memiliki Line-Shape Diffuser yang akan membantu musik Anda menjangkau lebih luas, bahkan ke samping speaker. Ditambah lagi, dengan ukuran portabel dan tali jinjing yang praktis, Anda dapat dengan mudah membawanya ke mana pun Anda pergi.",
+        spesifikasi: {
+            "Fitur": "Line-Shape Diffuser, X-Balanced Speaker",
+            "Daya Tahan Baterai": "Hingga 16 jam",
+            "Ketahanan": "Tahan air & debu (IP67), Tahan Guncangan",
+            "Konektivitas": "Bluetooth®, Party Connect",
+            "Fitur Tambahan": "Echo Cancelling untuk panggilan"
         }
     },
     "polytron-pas-8e12": {
@@ -173,6 +205,22 @@ const semuaProduk = {
             "Power Output": "2 x 100 Watt RMS"
         }
     },
+    "polytron-pas-8ef22": {
+        nama: "Polytron PAS 8EF22",
+        kategori: "Polytron",
+        linkKategori: "polytron.html",
+        harga: "Rp 2.850.000",
+        gambar: "assets/images/POLYTRONPAS8EF22.jpg",
+        deskripsiSingkat: "Speaker aktif floorstanding dengan dual woofer 8 inci dan fitur 3-Ways speaker system.",
+        deskripsiLengkap: "Rasakan dentuman bass yang lebih mantap dengan speaker aktif PAS 8EF22. Dilengkapi dengan teknologi XBR Woofer khas Polytron, menghasilkan bass yang jauh lebih kuat bahkan pada volume rendah. Desain elegan dengan finishing hitam dan sentuhan modern akan mempercantik ruangan Anda.",
+        spesifikasi: {
+            "Tipe Speaker": "Active Speaker, 3-Way Speaker System",
+            "Woofer": "Dual Woofer 8 inch",
+            "Fitur": "Super Bass, XBR Woofer, 2 Mic Input",
+            "Konektivitas": "Bluetooth, USB, Aux, Line Input",
+            "Power Output": "2 x 100 Watt RMS"
+        }
+    },
     "wilson-audio-sabrinax": {
         nama: "Wilson Audio SabrinaX",
         kategori: "Wilson Audio",
@@ -186,6 +234,22 @@ const semuaProduk = {
             "Drivers": "1 inch Dome Tweeter, 5.75 inch Midrange, 8 inch Woofer",
             "Respon Frekuensi": "31 Hz – 23 kHz",
             "Bahan": "X-Material Composite"
+        }
+    },
+    "wilson-audio-tunetot": {
+        nama: "Wilson Audio TuneTot",
+        kategori: "Wilson Audio",
+        linkKategori: "wilson audio.html",
+        harga: "Rp 165.000.000",
+        gambar: "assets/images/WILSONTUNETOT.jpg",
+        deskripsiSingkat: "Speaker bookshelf high-end yang menghadirkan suara Wilson Audio di ruang yang lebih kecil.",
+        deskripsiLengkap: "TuneTot adalah jawaban bagi para audiophile yang menginginkan kualitas suara Wilson Audio legendaris di lingkungan di mana speaker floorstanding tidak memungkinkan. Didesain untuk ditempatkan di rak buku, meja, atau credenza, TuneTot menghadirkan musikalitas, resolusi, dan panggung suara yang luar biasa.",
+        spesifikasi: {
+            "Tipe Enclosure": "Rear Ported",
+            "Drivers": "1 inch Dome Tweeter, 5.75 inch Mid-woofer",
+            "Sensitivitas": "86 dB @ 1W @ 1m @ 1k",
+            "Bahan": "X-Material & S-Material Composite",
+            "Berat": "13.15 kg per buah"
         }
     }
 };
